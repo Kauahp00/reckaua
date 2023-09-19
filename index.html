@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commerce de Celulares</title>
+
+</head>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<body>
+    
+
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="https://img.freepik.com/icones-gratis/loja-online_318-839336.jpg" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <h1> Ecommerce Celulares</h1>
+        <aside class="autenticacao">
+
+            <div id="switch" onclick="toggleMode()">
+                <button id="bnt" type="button"></button>
+                <span></span>
+
+        </aside>
+    </header>
+
+    </head>
+
+    <body>
+
+        <div class="container-slide">
+            <div class="action-button" id="previous">&laquo</div>
+            <div class="container-items"></div>
+            <div class="action-button" id="next">&raquo</div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="product" id="product1">
+                <h2>Galaxy S20</h2>
+                <img src="cel.png" width="200" height="300">
+                <p>Preço: R$ 4.999,00</p>
+                <button onclick="addToCart('Samsung Galaxy S20', 2999.00)">Adicionar ao Carrinho</button>
+                <img id="imagem" src="1.png" alt="imagem 1">
+                <button onclick="toggleImagem()">Favoritar</button>
+            </div>
+
+            <div class="product" id="product2">
+                <h2>Galaxy S21</h2>
+                <img src="cel2.png" width="200" height="300">
+                <p>Preço: R$ 3.999,00</p>
+                <button onclick="addToCart('Samsung Galaxy S21', 3999.00)">Adicionar ao Carrinho</button>
+                <img id="imagem2" src="1.png" alt="imagem 1">
+                <button onclick="toggleImagem2()">Favoritar</button>
+            </div>
+
+            <div class="product" id="product2">
+                <h2>Galaxy S22</h2>
+                <img src="cel3.png" width="200" height="300">
+                <p>Preço: R$ 5.999,00</p>
+                <button onclick="addToCart('Samsung Galaxy S22', 4999.00)">Adicionar ao Carrinho</button>
+                <img id="imagem3" src="1.png" alt="imagem 1">
+                <button onclick="toggleImagem3()">Favoritar</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product" id="product4">
+                <h2>iPhone 11</h2>
+                <img src="cel4.png" width="200" height="300">
+                <p>Preço: R$ 4.999,00</p>
+                <button onclick="addToCart('Iphone 11', 2999.00)">Adicionar ao Carrinho</button>
+                <img id="imagem4" src="1.png" alt="imagem 1">
+                <button onclick="toggleImagem4()">Favoritar</button>
+            </div>
+
+            <div class="product" id="product5">
+                <h2>iPhone 12</h2>
+                <img src="cel5.png" width="200" height="300">
+                <p>Preço: R$ 3.999,00</p>
+                <button onclick="addToCart('iPhone 11', 3999.00)">Adicionar ao Carrinho</button>
+                <img id="imagem5" src="1.png" alt="imagem 1">
+                <button onclick="toggleImagem5()">Favoritar</button>
+            </div>
+
+            <div class="product" id="product6">
+                <h2>iPhone 13</h2>
+                <img src="cel6.png" width="200" height="300">
+                <p>Preço: R$ 5.999,00</p>
+                <button onclick="addToCart('iPhone 11', 4999.00)">Adicionar ao Carrinho</button>
+                <img id="imagem6" src="1.png" alt="imagem 1">
+                <button onclick="toggleImagem6()">Favoritar</button>
+            </div>
+
+            
+        </div>
+
+        <div class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: R$ <span id="cart-total">0.00</span></p>
+           <button id="bttt" onclick="">Comprar</button>
+        </div>
+
+
+
+        <footer class="ff">
+            <p>&copy; 2023 E-commerce de Celulares. Todos os direitos reservados para Kauã.</p>
+        </footer>
+
+        <Script src="script.js"></Script>
+
+</html>
